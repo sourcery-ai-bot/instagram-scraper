@@ -7,9 +7,7 @@ requires = [
 ]
 
 if sys.version_info < (3, 2):
-    requires.append('futures==2.2')
-    requires.append('configparser')
-
+    requires.extend(('futures==2.2', 'configparser'))
 setup(
     name='instagram-scraper',
     version='1.7.2',
